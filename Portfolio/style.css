@@ -1,0 +1,53 @@
+body {
+    width: 100%;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(160, 160, 160);
+}
+
+nav {
+    height: 100%;
+    width: 70%;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Times New Roman', serif;
+    width: 120px;
+    padding: 0 15px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: #FFFFFF 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #FFFFFF;
+    color:rgb(160, 160, 160)
+}
+
+.titolo {
+    position: relative;
+    top: 70px;
+    font-size: 35px;
+}
+
+.titolo h1 {
+    margin: 5px;
+}
