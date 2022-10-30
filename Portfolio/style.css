@@ -1,23 +1,38 @@
 body {
     width: 100%;
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
-    height: 70px;
     width: 100%;
     position: fixed;
+    height: 70px;
+    display: flex;
     top: 0px;
-    left: 0px;
-    background-color: rgb(160, 160, 160);
+    left: 0px;  
+    background-color: rgb(96, 96, 96);
+    z-index: 1;
+    justify-content: center;
+}
+
+header p {
+    font-size: 20px;
+    display: inline-block;
+    color: #FFFFFF;
+    margin: 5px 20px 5px 20px;
+    padding: 5px 15px;
+    border: #FFFFFF 1px solid;
+    border-radius: 5px;
 }
 
 nav {
+    display: flex;
     height: 100%;
-    width: 70%;
-}
-
-nav ul {
-    padding: 0;
+    width: 100%;
+    justify-content: center;
 }
 
 nav li {
@@ -39,15 +54,55 @@ nav a {
 
 nav a:hover {
     background-color: #FFFFFF;
-    color:rgb(160, 160, 160)
+    color: rgb(96, 96, 96);
 }
 
-.titolo {
+section {
     position: relative;
     top: 70px;
-    font-size: 35px;
+    width: 75%;
+    margin: 5px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-align: center;
+    border:rgb(255, 255, 255) 3px solid;
+    border-radius: 10px;
 }
 
-.titolo h1 {
-    margin: 5px;
+
+section.io li{
+    display: inline-block;
+    margin: 0 15px;
+    padding: 5px;
+}
+
+section.io li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: #FFFFFF 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+section.io li a:hover {
+    background-color: #FFFFFF;
+    color: rgb(96, 96, 96);
+}
+
+section.progetti a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+section.progetti a:hover {
+    color: orange;
+}
+
+@media only screen and (max-width: 900px) {
+    #nav a {
+        font-size: 10px;
+    }
+    section h1, section p, section h3, section ul a, section h4 {
+        font-size: 10px;
+    }
 }
